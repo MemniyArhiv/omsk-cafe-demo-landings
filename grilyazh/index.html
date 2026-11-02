@@ -6,77 +6,118 @@
   <meta name="robots" content="noindex">
   <title>Грильяж · демо-концепт, не официальный сайт</title>
   <meta name="description" content="Грильяж — Гастро-хаус на Харьковской улице: хинкали, пироги и чебуреки, блины и пельмени, кондитерская с тортами и бенто-тортами, бизнес-ланч и зал до 70 мест. Демо-концепт, не официальный сайт.">
-  <meta name="theme-color" content="#f7f2e9">
+  <meta name="theme-color" content="#F1ECE0">
+  <link rel="preload" href="../assets/fonts/pt-sans-narrow-700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/pt-sans-narrow-700-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/main.js" defer></script>
 </head>
-<body class="">
+<body class="mode-day">
   <a class="skip-link" href="#main">К содержанию</a>
 
   <div class="demo-banner" role="note">
-    <span class="demo-banner__dot" aria-hidden="true"></span>
+    <span class="demo-banner__mark" aria-hidden="true"></span>
     Демо-концепт, не официальный сайт
   </div>
 
-  <header class="site-header" data-header>
-    <div class="container header-inner">
-      <a class="brand" href="#main" aria-label="Грильяж · к началу страницы">
-        <span class="brand-mark" aria-hidden="true">Г</span>
-        <span class="brand-name">Грильяж</span>
-      </a>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#main" aria-label="Грильяж — к содержанию">Грильяж</a>
+      <span class="topbar__mode">День</span>
       
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="visually-hidden">Меню</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Разделы страницы" data-nav>
-        <ul class="nav-list">
-          <li><a href="#main">Начало</a></li>
-          <li><a href="#prices">Меню и цены</a></li>
-          
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-        
-      </nav>
-      
+      <a class="btn btn--ghost topbar__cta" href="https://2gis.ru/omsk/directions/points/73.414396%2C54.946107" target="_blank" rel="noopener noreferrer">Маршрут <span class="btn__arrow" aria-hidden="true">→</span></a>
     </div>
   </header>
 
+  <aside class="spine" aria-label="Разделы страницы">
+    <div class="spine__inner">
+      <p class="spine__mode"><span class="spine__mode-dot" aria-hidden="true"></span>День</p>
+      <nav class="spine__nav" aria-label="Разделы">
+        
+        <a class="spine__tab" href="#visit" data-spine-tab="visit" aria-current="true">
+          <span class="spine__num">01</span><span class="spine__label">Визитка</span>
+        </a>
+        
+        <a class="spine__tab" href="#menu" data-spine-tab="menu" >
+          <span class="spine__num">02</span><span class="spine__label">Меню</span>
+        </a>
+        
+        <a class="spine__tab" href="#coords" data-spine-tab="coords" >
+          <span class="spine__num">03</span><span class="spine__label">Координаты</span>
+        </a>
+        
+      </nav>
+      <p class="spine__city" aria-hidden="true">Омск · Витрина</p>
+    </div>
+  </aside>
+
   <main id="main">
-    <section class="hero" id="hero">
-      <span class="hero-mark" aria-hidden="true">Г</span>
-      <div class="container hero-inner">
-        <p class="eyebrow">кафе</p>
-        <h1 class="hero-title">Грильяж</h1>
-        <p class="hero-lead">Гастро-хаус на Харьковской улице: хинкали, пироги и чебуреки, блины и пельмени, кондитерская с тортами и бенто-тортами, бизнес-ланч и зал до 70 мест.</p>
-        
-        <div class="hero-actions">
+    <section class="masthead" id="masthead">
+      
+      <div class="page-rail">
+        <div class="masthead__inner">
+          <h1 class="masthead__name">Грильяж</h1>
+          <p class="masthead__tagline">Гастро-хаус на Харьковской улице: хинкали, пироги и чебуреки, блины и пельмени, кондитерская с тортами и бенто-тортами, бизнес-ланч и зал до 70 мест.</p>
           
-          <a class="btn btn--ghost" href="https://2gis.ru/omsk/directions/points/73.414396%2C54.946107" target="_blank" rel="noopener noreferrer">Маршрут</a>
+          <p class="masthead__rule">
+            <span>Омск</span>
+            
+            <span class="masthead__sep" aria-hidden="true">/</span><span>кафе</span>
+            <span class="masthead__mode">День</span>
+          </p>
+          
         </div>
-        
-        
       </div>
     </section>
 
     
-    <section class="section" id="prices" aria-labelledby="prices-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-kicker">Меню</p>
-          <h2 class="section-title" id="prices-title">Меню и цены</h2>
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="page-rail">
+        <header class="section__head">
+          <span class="section__num">01</span>
+          <h2 class="section__title" id="visit-title">Визитка</h2>
+          <span class="section__rule" aria-hidden="true"></span>
         </header>
-        <ul class="price-list">
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Средний чек</span>
-              <span class="price-note">по данным 2ГИС</span>
-            </span>
-            <span class="price-value">400 ₽</span>
-          </li>
-          
-        </ul>
+        <div class="ticket ticket--solo">
+          <div class="ticket__grid">
+            
+            <div class="ticket__cell">
+              <p class="ticket__label">Адрес</p>
+              <p class="ticket__value">Харьковская улица, 7</p>
+              <a class="ticket__link" href="https://2gis.ru/omsk/firm/70000001062958148" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС <span class="btn__arrow" aria-hidden="true">→</span></a>
+            </div>
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <section class="section" id="menu" aria-labelledby="menu-title">
+      <div class="page-rail">
+        <header class="section__head">
+          <span class="section__num">02</span>
+          <h2 class="section__title" id="menu-title">Меню</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+        </header>
+        <div class="receipt">
+          <ul class="price-list">
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Средний чек</span>
+                <span class="price-note">по данным 2ГИС</span>
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">400 ₽</span>
+            </li>
+            
+          </ul>
+        </div>
       </div>
     </section>
     
@@ -84,38 +125,29 @@
     
 
     
-    <section class="section" id="contacts" aria-labelledby="contacts-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-kicker">Как найти</p>
-          <h2 class="section-title" id="contacts-title">Контакты</h2>
+
+    
+    <section class="section" id="coords" aria-labelledby="coords-title">
+      <div class="page-rail">
+        <header class="section__head">
+          <span class="section__num">03</span>
+          <h2 class="section__title" id="coords-title">Координаты</h2>
+          <span class="section__rule" aria-hidden="true"></span>
         </header>
-        <div class="contact-grid contact-grid--2">
-          
-          <div class="contact-card">
-            <h3 class="contact-title">Адрес</h3>
-            <p class="contact-text">Харьковская улица, 7</p>
-            <a class="text-link" href="https://2gis.ru/omsk/firm/70000001062958148" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>
-          </div>
-          
-          
-          
-          <div class="contact-card contact-card--map">
-            <h3 class="contact-title">На карте</h3>
-            <div class="map-art" aria-hidden="true"><span class="map-pin"></span></div>
-            <a class="btn btn--ghost btn--wide" href="https://2gis.ru/omsk/firm/70000001062958148" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>
-          </div>
-          
+        <div class="coords">
+          <p class="coords__values">Ш 54.9461 <span class="coords__sep" aria-hidden="true">/</span> Д 73.4144</p>
+          <a class="btn btn--ghost" href="https://2gis.ru/omsk/firm/70000001062958148" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС <span class="btn__arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
     
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-banner">Демо-концепт, не официальный сайт</p>
-      <p class="footer-note">Демонстрационный макет страницы. Он не связан с заведением и не является его официальным сайтом.</p>
+  <footer class="colophon">
+    <div class="colophon__inner">
+      <p class="colophon__banner">Демо-концепт, не официальный сайт</p>
+      <p class="colophon__note">Демонстрационный макет. Не связан с заведением и не является его официальным сайтом.</p>
+      <p class="colophon__sources">Данные: 2ГИС</p>
     </div>
   </footer>
 

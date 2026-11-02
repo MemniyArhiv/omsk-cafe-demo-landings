@@ -6,210 +6,326 @@
   <meta name="robots" content="noindex">
   <title>Ором · демо-концепт, не официальный сайт</title>
   <meta name="description" content="Ором — Кафе восточной и европейской кухни на Красноярском тракте: шашлык, манты и лагман, живая музыка и танцпол, летняя веранда — зал до 200 мест. Демо-концепт, не официальный сайт.">
-  <meta name="theme-color" content="#f7f2e9">
+  <meta name="theme-color" content="#F1ECE0">
+  <link rel="preload" href="../assets/fonts/pt-sans-narrow-700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/pt-sans-narrow-700-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/main.js" defer></script>
 </head>
-<body class="has-call-fab">
+<body class="mode-day has-call-fab">
   <a class="skip-link" href="#main">К содержанию</a>
 
   <div class="demo-banner" role="note">
-    <span class="demo-banner__dot" aria-hidden="true"></span>
+    <span class="demo-banner__mark" aria-hidden="true"></span>
     Демо-концепт, не официальный сайт
   </div>
 
-  <header class="site-header" data-header>
-    <div class="container header-inner">
-      <a class="brand" href="#main" aria-label="Ором · к началу страницы">
-        <span class="brand-mark" aria-hidden="true">О</span>
-        <span class="brand-name">Ором</span>
-      </a>
-      
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="visually-hidden">Меню</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Разделы страницы" data-nav>
-        <ul class="nav-list">
-          <li><a href="#main">Начало</a></li>
-          <li><a href="#prices">Меню и цены</a></li>
-          <li><a href="#praise">За что хвалят</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-        <a class="btn btn--primary nav-call" href="tel:+79507904404">Позвонить</a>
-      </nav>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#main" aria-label="Ором — к содержанию">Ором</a>
+      <span class="topbar__mode">День</span>
+      <a class="btn btn--primary topbar__cta" href="tel:+79507904404">Позвонить <span class="btn__arrow" aria-hidden="true">→</span></a>
       
     </div>
   </header>
 
+  <aside class="spine" aria-label="Разделы страницы">
+    <div class="spine__inner">
+      <p class="spine__mode"><span class="spine__mode-dot" aria-hidden="true"></span>День</p>
+      <nav class="spine__nav" aria-label="Разделы">
+        
+        <a class="spine__tab" href="#visit" data-spine-tab="visit" aria-current="true">
+          <span class="spine__num">01</span><span class="spine__label">Визитка</span>
+        </a>
+        
+        <a class="spine__tab" href="#menu" data-spine-tab="menu" >
+          <span class="spine__num">02</span><span class="spine__label">Меню</span>
+        </a>
+        
+        <a class="spine__tab" href="#notes" data-spine-tab="notes" >
+          <span class="spine__num">03</span><span class="spine__label">Отзывы</span>
+        </a>
+        
+        <a class="spine__tab" href="#coords" data-spine-tab="coords" >
+          <span class="spine__num">04</span><span class="spine__label">Координаты</span>
+        </a>
+        
+      </nav>
+      <p class="spine__city" aria-hidden="true">Омск · Витрина</p>
+    </div>
+  </aside>
+
   <main id="main">
-    <section class="hero" id="hero">
-      <span class="hero-mark" aria-hidden="true">О</span>
-      <div class="container hero-inner">
-        <p class="eyebrow">кафе · Советский округ</p>
-        <h1 class="hero-title">Ором</h1>
-        <p class="hero-lead">Кафе восточной и европейской кухни на Красноярском тракте: шашлык, манты и лагман, живая музыка и танцпол, летняя веранда — зал до 200 мест.</p>
-        
-        <div class="hero-actions">
-          <a class="btn btn--primary" href="tel:+79507904404">Позвонить</a>
-          <a class="btn btn--ghost" href="https://2gis.ru/omsk/directions/points/73.336796%2C55.040149" target="_blank" rel="noopener noreferrer">Маршрут</a>
+    <section class="masthead" id="masthead">
+      
+      <div class="page-rail">
+        <div class="masthead__inner">
+          <h1 class="masthead__name">Ором</h1>
+          <p class="masthead__tagline">Кафе восточной и европейской кухни на Красноярском тракте: шашлык, манты и лагман, живая музыка и танцпол, летняя веранда — зал до 200 мест.</p>
+          
+          <div class="masthead__actions">
+            <a class="btn btn--ghost" href="https://2gis.ru/omsk/directions/points/73.336796%2C55.040149" target="_blank" rel="noopener noreferrer">Маршрут <span class="btn__arrow" aria-hidden="true">→</span></a>
+          </div>
+          
+          <p class="masthead__rule">
+            <span>Омск</span>
+            <span class="masthead__sep" aria-hidden="true">/</span><span>Советский округ</span>
+            <span class="masthead__sep" aria-hidden="true">/</span><span>кафе</span>
+            <span class="masthead__mode">День</span>
+          </p>
+          
         </div>
-        
-        <p class="hero-phone"><a href="tel:+79507904404">+7 950 790-44-04</a></p>
       </div>
     </section>
 
     
-    <section class="section" id="prices" aria-labelledby="prices-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-kicker">Меню</p>
-          <h2 class="section-title" id="prices-title">Меню и цены</h2>
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="page-rail">
+        <header class="section__head">
+          <span class="section__num">01</span>
+          <h2 class="section__title" id="visit-title">Визитка</h2>
+          <span class="section__rule" aria-hidden="true"></span>
         </header>
-        <ul class="price-list">
+        <div class="ticket">
+          <div class="ticket__grid">
+            
+            <div class="ticket__cell">
+              <p class="ticket__label">Адрес</p>
+              <p class="ticket__value">Красноярский тракт, 14 к1, 1 этаж</p>
+              <a class="ticket__link" href="https://2gis.ru/omsk/firm/282003258933496" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС <span class="btn__arrow" aria-hidden="true">→</span></a>
+            </div>
+            
+            
+            
+            <div class="ticket__cell">
+              <p class="ticket__label">Телефон</p>
+              <a class="ticket__phone" href="tel:+79507904404">+7 950 790-44-04</a>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <section class="section" id="menu" aria-labelledby="menu-title">
+      <div class="page-rail">
+        <header class="section__head">
+          <span class="section__num">02</span>
+          <h2 class="section__title" id="menu-title">Меню</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+        </header>
+        <div class="receipt">
+          <ul class="price-list">
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Шашлык куриный 200 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">370 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Шашлык из индейки 150 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">520 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Шашлык из говядины 120 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">520 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Люля-кебаб из баранины 120 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">450 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Шашлык грибной 150 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">360 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Норин 300 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">490 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Лагман по-узбекски 300 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">350 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Цезарь с курицей 150 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">400 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Греческий 200 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">350 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Мужской Каприз 150 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">380 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Шакароп 120 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">280 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Мясное ассорти 230 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">620 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Казы с лучком 180 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">620 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Селедочка с лучком 150 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">400 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Рубленый стейк из курицы 220 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">470 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Коурдок 200 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">420 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Хачапури с сирм 300 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">580 ₽</span>
+            </li>
+            
+            <li class="price-row">
+              <span class="price-main">
+                <span class="price-name">Лепешка с кунжутом 150 г</span>
+                
+              </span>
+              <span class="price-leader" aria-hidden="true"></span>
+              <span class="price-value">55 ₽</span>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <section class="section" id="notes" aria-labelledby="notes-title">
+      <div class="page-rail">
+        <header class="section__head">
+          <span class="section__num">03</span>
+          <h2 class="section__title" id="notes-title">Отзывы</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+        </header>
+        <ul class="notes">
           
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Шашлык куриный 200 г</span>
-              
-            </span>
-            <span class="price-value">370 ₽</span>
+          <li class="note">
+            <span class="note__num">01</span>
+            <p class="note__text">Хвалят кухню: гости отмечают сытные блюда и большие порции, отдельно выделяют шурпу и манты.</p>
           </li>
           
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Шашлык из индейки 150 г</span>
-              
-            </span>
-            <span class="price-value">520 ₽</span>
+          <li class="note">
+            <span class="note__num">02</span>
+            <p class="note__text">Отмечают адекватные цены и возможность быстро пообедать.</p>
           </li>
           
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Шашлык из говядины 120 г</span>
-              
-            </span>
-            <span class="price-value">520 ₽</span>
+          <li class="note">
+            <span class="note__num">03</span>
+            <p class="note__text">Говорят о вежливом и внимательном персонале.</p>
           </li>
           
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Люля-кебаб из баранины 120 г</span>
-              
-            </span>
-            <span class="price-value">450 ₽</span>
+          <li class="note">
+            <span class="note__num">04</span>
+            <p class="note__text">Упоминают живую музыку и выступления по выходным.</p>
           </li>
           
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Шашлык грибной 150 г</span>
-              
-            </span>
-            <span class="price-value">360 ₽</span>
+          <li class="note">
+            <span class="note__num">05</span>
+            <p class="note__text">Отмечают уютный зал и домашнюю атмосферу.</p>
           </li>
           
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Норин 300 г</span>
-              
-            </span>
-            <span class="price-value">490 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Лагман по-узбекски 300 г</span>
-              
-            </span>
-            <span class="price-value">350 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Цезарь с курицей 150 г</span>
-              
-            </span>
-            <span class="price-value">400 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Греческий 200 г</span>
-              
-            </span>
-            <span class="price-value">350 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Мужской Каприз 150 г</span>
-              
-            </span>
-            <span class="price-value">380 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Шакароп 120 г</span>
-              
-            </span>
-            <span class="price-value">280 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Мясное ассорти 230 г</span>
-              
-            </span>
-            <span class="price-value">620 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Казы с лучком 180 г</span>
-              
-            </span>
-            <span class="price-value">620 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Селедочка с лучком 150 г</span>
-              
-            </span>
-            <span class="price-value">400 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Рубленый стейк из курицы 220 г</span>
-              
-            </span>
-            <span class="price-value">470 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Коурдок 200 г</span>
-              
-            </span>
-            <span class="price-value">420 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Хачапури с сирм 300 г</span>
-              
-            </span>
-            <span class="price-value">580 ₽</span>
-          </li>
-          
-          <li class="price-row">
-            <span class="price-main">
-              <span class="price-name">Лепешка с кунжутом 150 г</span>
-              
-            </span>
-            <span class="price-value">55 ₽</span>
+          <li class="note">
+            <span class="note__num">06</span>
+            <p class="note__text">Упоминают, что здесь удобно отмечать семейные праздники.</p>
           </li>
           
         </ul>
@@ -218,88 +334,38 @@
     
 
     
-    <section class="section section--praise" id="praise" aria-labelledby="praise-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-kicker">Отзывы гостей</p>
-          <h2 class="section-title" id="praise-title">За что хвалят</h2>
-          <p class="section-note">Обобщённые формулировки гостей, без имён и личных цитат.</p>
-        </header>
-        <ul class="praise-grid">
-          
-          <li class="praise-card">
-            <blockquote class="praise-quote">Хвалят кухню: гости отмечают сытные блюда и большие порции, отдельно выделяют шурпу и манты.</blockquote>
-          </li>
-          
-          <li class="praise-card">
-            <blockquote class="praise-quote">Отмечают адекватные цены и возможность быстро пообедать.</blockquote>
-          </li>
-          
-          <li class="praise-card">
-            <blockquote class="praise-quote">Говорят о вежливом и внимательном персонале.</blockquote>
-          </li>
-          
-          <li class="praise-card">
-            <blockquote class="praise-quote">Упоминают живую музыку и выступления по выходным.</blockquote>
-          </li>
-          
-          <li class="praise-card">
-            <blockquote class="praise-quote">Отмечают уютный зал и домашнюю атмосферу.</blockquote>
-          </li>
-          
-          <li class="praise-card">
-            <blockquote class="praise-quote">Упоминают, что здесь удобно отмечать семейные праздники.</blockquote>
-          </li>
-          
-        </ul>
-      </div>
-    </section>
-    
 
     
-    <section class="section" id="contacts" aria-labelledby="contacts-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-kicker">Как найти</p>
-          <h2 class="section-title" id="contacts-title">Контакты</h2>
+    <section class="section" id="coords" aria-labelledby="coords-title">
+      <div class="page-rail">
+        <header class="section__head">
+          <span class="section__num">04</span>
+          <h2 class="section__title" id="coords-title">Координаты</h2>
+          <span class="section__rule" aria-hidden="true"></span>
         </header>
-        <div class="contact-grid contact-grid--2">
-          
-          <div class="contact-card">
-            <h3 class="contact-title">Адрес</h3>
-            <p class="contact-text">Красноярский тракт, 14 к1, 1 этаж</p>
-            <a class="text-link" href="https://2gis.ru/omsk/firm/282003258933496" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>
-          </div>
-          
-          
-          
-          <div class="contact-card contact-card--map">
-            <h3 class="contact-title">На карте</h3>
-            <div class="map-art" aria-hidden="true"><span class="map-pin"></span></div>
-            <a class="btn btn--ghost btn--wide" href="https://2gis.ru/omsk/firm/282003258933496" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>
-          </div>
-          
+        <div class="coords">
+          <p class="coords__values">Ш 55.0401 <span class="coords__sep" aria-hidden="true">/</span> Д 73.3368</p>
+          <a class="btn btn--ghost" href="https://2gis.ru/omsk/firm/282003258933496" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС <span class="btn__arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
     
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-banner">Демо-концепт, не официальный сайт</p>
-      <p class="footer-note">Демонстрационный макет страницы. Он не связан с заведением и не является его официальным сайтом.</p>
+  <footer class="colophon">
+    <div class="colophon__inner">
+      <p class="colophon__banner">Демо-концепт, не официальный сайт</p>
+      <p class="colophon__note">Демонстрационный макет. Не связан с заведением и не является его официальным сайтом.</p>
+      <p class="colophon__sources">Данные: 2ГИС</p>
     </div>
   </footer>
 
   
   <a class="call-fab" href="tel:+79507904404" aria-label="Позвонить: +7 950 790-44-04">
-    <span class="call-fab__icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4.08 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.36a2 2 0 0 1-.45 2.11L8 9.36a16 16 0 0 0 6.64 6.64l1.17-1.17a2 2 0 0 1 2.11-.45c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z"/>
-      </svg>
-    </span>
-    <span class="call-fab__label">Позвонить</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4.08 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.36a2 2 0 0 1-.45 2.11L8 9.36a16 16 0 0 0 6.64 6.64l1.17-1.17a2 2 0 0 1 2.11-.45c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z"/>
+    </svg>
+    <span class="visually-hidden">Позвонить</span>
   </a>
   
 </body>
