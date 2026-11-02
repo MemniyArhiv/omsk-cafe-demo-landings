@@ -303,7 +303,7 @@ ul {
 .brand {
   display: inline-flex;
   align-items: center;
-  min-width: 0;
+  min-width: 44px;
   min-height: 44px;
   overflow: hidden;
   color: var(--ink);
@@ -1098,7 +1098,7 @@ ul {
 
 @media (min-width: 640px) {
   .photo-roll__list {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .ticket__grid {

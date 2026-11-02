@@ -23,6 +23,15 @@
 
   setCurrent(sections[0].id);
 
+  // Scroll-spy can leave the last section marked when the user scrolls back to
+  // the masthead; reset to the first section at the very top of the page.
+  function resetAtTop() {
+    if (window.scrollY <= 8) setCurrent(sections[0].id);
+  }
+
+  window.addEventListener('scroll', resetAtTop, { passive: true });
+  resetAtTop();
+
   if ('IntersectionObserver' in window) {
     var observer = new IntersectionObserver(
       function (entries) {
